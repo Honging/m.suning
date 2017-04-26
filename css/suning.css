@@ -1,0 +1,706 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #acd3b3;
+  font-family: "microsoft yahei", arial;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+/* header 
+*******************************/
+.g-hd {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 1.825rem;
+  border-bottom: 0.025rem solid #fac900;
+  background: #fabc09;
+}
+.g-hd a {
+  float: left;
+  height: 100%;
+}
+.g-hd .menu {
+  width: 1.95rem;
+  background: url(../images/menu.png) center center no-repeat;
+  background-size: 0.875rem 1.375rem;
+}
+.g-hd .select {
+  box-sizing: border-box;
+  padding-top: 0.3rem;
+}
+.g-hd .select .input {
+  width: 12rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 0.5rem;
+  color: #a7a7a9;
+  border-radius: 0.125rem;
+  background: #d5dba9 url(../images/search.png) 0.4rem center no-repeat;
+  background-size: 0.55rem 0.6rem;
+}
+.g-hd .select .input .text {
+  display: block;
+  text-indent: 1.25rem;
+}
+.g-hd .cart {
+  width: 2.05rem;
+  background: url(../images/cart.png) center center no-repeat;
+  background-size: 1.25rem 1.375rem;
+}
+/* banner 
+*******************************/
+.g-main {
+  padding-top: 1.825rem;
+}
+/* banner 
+*******************************/
+.g-ban {
+  position: relative;
+  width: 100%;
+  height: 6.825rem;
+  overflow: hidden;
+}
+.g-ban ul {
+  position: absolute;
+  right: 0.3rem;
+  bottom: 0.4rem;
+  overflow: hidden;
+  height: 0.25rem;
+}
+.g-ban ul li {
+  float: left;
+  margin: 0 0.075rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #d4bdd8;
+  border-radius: 0.25rem;
+}
+.g-ban ul .dotted {
+  background: #ffc001;
+}
+.g-ban a {
+  float: left;
+  width: 16rem;
+  height: 6.825rem;
+}
+.g-ban a img {
+  width: 100%;
+  height: 100%;
+}
+/* redbag 
+*******************************/
+.g-redbag {
+  margin-bottom: 0.025rem;
+  width: 100%;
+  height: 4.275rem;
+  background: #fff;
+}
+.g-redbag a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.g-redbag a img {
+  width: 100%;
+  height: 3.625rem;
+  vertical-align: top;
+}
+/* nav 
+*******************************/
+.g-nav {
+  padding: 0.25rem 0;
+  margin-bottom: 0.025rem;
+  width: 100%;
+  height: 6.125rem;
+  background: #cce3d1;
+}
+.g-nav a {
+  float: left;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 25%;
+  height: 3.075rem;
+}
+.g-nav a dl {
+  height: 100%;
+  width: 100%;
+}
+.g-nav a dl dt {
+  margin: 0 auto 0.25rem;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.g-nav a dl dt img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.g-nav a dl dd {
+  width: 100%;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  font-size: 0.5rem;
+  text-align: center;
+  color: #7a7d80;
+}
+/* news 
+*******************************/
+.g-news {
+  margin-bottom: 0.375rem;
+  padding: 0.35rem 0 0.475rem;
+  height: 1.35rem;
+  width: 100%;
+  background: #cce3d1;
+}
+.g-news .news-hd {
+  float: left;
+  height: 1.35rem;
+  width: 3.5rem;
+}
+.g-news .news-hd img {
+  height: 1.35rem;
+  width: 3.5rem;
+}
+.g-news .news-list {
+  float: left;
+  margin-left: 0.8rem;
+  height: 1.35rem;
+  width: 11.25rem;
+}
+.g-news .news-list li {
+  height: 0.675rem;
+}
+.g-news .news-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 0.675rem;
+  text-indent: 0.4rem;
+  font-size: 0.5rem;
+  color: #969596;
+  background: url(../images/dot.png) 0 0.35rem no-repeat;
+  background-size: 0.15rem 0.15rem;
+}
+.g-news .news-list li a:first-child {
+  color: #000;
+}
+/* go 
+*******************************/
+.g-go {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-top: 0.075rem solid #bfcfa9;
+}
+.g-go .go-top {
+  width: 100%;
+  height: 6.225rem;
+}
+.g-go .go-top a {
+  float: left;
+  box-sizing: border-box;
+  padding: 0.025rem;
+  width: 50%;
+}
+.g-go .go-top a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.g-go .go-top .top-left {
+  height: 100%;
+}
+.g-go .go-top .top-right {
+  height: 50%;
+}
+.g-go .go-bottom {
+  width: 100%;
+  height: 12.9rem;
+}
+.g-go .go-bottom a {
+  float: left;
+  box-sizing: border-box;
+  padding: 0.025rem;
+  width: 25%;
+}
+.g-go .go-bottom a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+/* rob 
+*******************************/
+.g-rob {
+  padding: 0.325rem 0 0.45rem;
+  width: 100%;
+  height: 6.4rem;
+  background: #cce3d1;
+}
+.g-rob .rob-hd {
+  width: 100%;
+  height: 1.35rem;
+}
+.g-rob .rob-hd .hd-logo {
+  float: left;
+  margin-left: 0.6rem;
+  width: 3rem;
+}
+.g-rob .rob-hd .hd-logo img {
+  width: 100%;
+  vertical-align: top;
+}
+.g-rob .rob-hd .rob-time {
+  float: left;
+  padding: 0.375rem 0.25rem;
+  height: 0.55rem;
+  line-height: 0.65rem;
+  font-size: 0.4rem;
+  color: #fc4546;
+}
+.g-rob .rob-hd .rob-time .time {
+  color: #000;
+}
+.g-rob .rob-hd .rob-time .time span {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  border: 0.025rem solid #809575;
+  border-radius: 0.075rem;
+}
+.g-rob .rob-hd .rob-time .time .second {
+  color: #fc4546;
+  border-color: #fc4546;
+}
+.g-rob .rob-hd .more {
+  float: right;
+  margin: 0.3rem 0.4rem;
+  padding-right: 0.4rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  background: url(../images/more.png) right center no-repeat;
+  background-size: 0.4rem 0.7rem;
+}
+.g-rob .rob-hd .more .more-text {
+  float: right;
+  padding: 0 0.2rem;
+  font-size: 0.4rem;
+  color: #2d6228;
+  background: #ffc001;
+  border-radius: 0.25rem;
+}
+.g-rob .rob-list-wrap {
+  box-sizing: border-box;
+  padding-left: 0.3rem;
+  width: 100%;
+  height: 5.05rem;
+  overflow: hidden;
+}
+.g-rob .rob-list-wrap .rob-list {
+  float: left;
+  margin: 0.075rem;
+  width: 4.75rem;
+  height: 5.05rem;
+}
+.g-rob .rob-list-wrap .rob-list dl {
+  width: 100%;
+  height: 100%;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-pic {
+  height: 3.5rem;
+  border: 0.05rem solid #b2cdb1;
+  border-bottom: 0;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-pic img {
+  height: 100%;
+  width: 100%;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price {
+  position: relative;
+  height: 1.5rem;
+  background: #ddd;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price p {
+  margin: 0;
+  padding: 0;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  text-indent: 1em;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price .price-now {
+  font-size: 0.45rem;
+  color: #d00;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price .price-before {
+  font-size: 0.35rem;
+  text-decoration: line-through;
+  color: #8f8f8f;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price .discount {
+  z-index: 10;
+  position: absolute;
+  right: 0.125rem;
+  top: -0.125rem;
+  box-sizing: border-box;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  width: 1.5rem;
+  height: 1.625rem;
+  line-height: 0.675rem;
+  font-size: 0.4rem;
+  color: #fff;
+  background: url(../images/discount.png) no-repeat;
+  background-size: 1.5rem 1.625rem;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price .discount .discount-abit {
+  line-height: 0.5rem;
+  font-size: 0.45rem;
+}
+.g-rob .rob-list-wrap .rob-list dl .list-price .discount .discount-decimal {
+  line-height: 0.55rem;
+}
+/* ad 
+*******************************/
+.g-ad {
+  width: 100%;
+  height: 6.45rem;
+  padding-bottom: 0.45rem;
+  background: #cce3d1;
+}
+.g-ad a {
+  float: left;
+  box-sizing: border-box;
+  padding: 0.025rem;
+  width: 50%;
+  height: 6.45rem;
+}
+.g-ad a img {
+  width: 100%;
+  height: 100%;
+}
+/* party 
+*******************************/
+.g-block {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background: #cce3d1;
+}
+.g-block .block-hd {
+  height: 1.25rem;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 0.025rem;
+}
+.g-block .block-hd img {
+  height: 100%;
+}
+.g-block .blocks {
+  width: 100%;
+}
+.g-block .blocks a {
+  float: left;
+  box-sizing: border-box;
+  padding: 0.025rem;
+}
+.g-block .blocks a img {
+  width: 100%;
+  height: 100%;
+}
+.g-block .blocks .party01 {
+  height: 8.6rem;
+  width: 50%;
+}
+.g-block .blocks .party02 {
+  height: 3.15rem;
+  width: 50%;
+}
+.g-block .blocks .party03 {
+  height: 5.45rem;
+  width: 25%;
+}
+.g-block .blocks:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  font-size: 0;
+}
+/* banner02 
+*******************************/
+.g-ban02 {
+  position: relative;
+  width: 100%;
+  height: 4.25rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.g-ban02 .dot {
+  top: 0.35rem;
+}
+.g-ban02 a {
+  width: 16rem;
+  height: 4.25rem;
+}
+/* goods 
+*******************************/
+.goods .blocks .goods01 {
+  width: 50%;
+  height: 6.25rem;
+}
+.goods .blocks .goods02 {
+  width: 50%;
+  height: 3.125rem;
+}
+/* market 
+*******************************/
+.market .blocks .market01 {
+  width: 50%;
+  height: 6.25rem;
+}
+.market .blocks .market02 {
+  width: 33.33%;
+  height: 5.25rem;
+}
+/* brand 
+*******************************/
+.brand .blocks .brand01 {
+  width: 50%;
+  height: 6.25rem;
+}
+.brand .blocks .brand02 {
+  width: 25%;
+  height: 6.25rem;
+}
+/* finance 
+*******************************/
+.finance .blocks .finance01 {
+  width: 50%;
+  height: 6.25rem;
+}
+.finance .blocks .finance02 {
+  width: 50%;
+  height: 3.125rem;
+}
+/* shop 
+*******************************/
+.shop .blocks {
+  position: relative;
+  padding-bottom: 1.25rem;
+}
+.shop .blocks .dot {
+  position: absolute;
+  right: 7.5rem;
+  bottom: 0.5rem;
+  overflow: hidden;
+  height: 0.25rem;
+}
+.shop .blocks .dot li {
+  float: left;
+  margin: 0 0.075rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #d4bdd8;
+  border-radius: 0.25rem;
+}
+.shop .blocks .dot .dotted {
+  background: #ffc001;
+}
+.shop .blocks .turner03 {
+  width: 100%;
+  height: 7.1rem;
+}
+.shop .blocks .turner03 .trn {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.325rem;
+  width: 50%;
+}
+.shop .blocks .turner03 .trn .trn-hd {
+  float: left;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 1.7rem;
+}
+.shop .blocks .turner03 .trn .trn-hd .trn-hd-pic {
+  float: left;
+  height: 100%;
+  width: 1.7rem;
+  border-radius: 1.7rem;
+  background: #ffffff url(../images/shop-hd01.png) center center no-repeat;
+  background-size: 1.1rem;
+}
+.shop .blocks .turner03 .trn .trn-hd .shop-text {
+  float: left;
+  margin-left: 0.4rem;
+  width: 5rem;
+  height: 100%;
+}
+.shop .blocks .turner03 .trn .trn-hd .shop-text li {
+  float: left;
+  width: 100%;
+}
+.shop .blocks .turner03 .trn .trn-hd .shop-text .shop-title {
+  height: 0.725rem;
+  line-height: 0.725rem;
+  font-size: 0.575rem;
+  color: #000;
+  margin-bottom: 0.05rem;
+}
+.shop .blocks .turner03 .trn .trn-hd .shop-text .shop-con {
+  height: 0.925rem;
+  line-height: 0.925rem;
+  font-size: 0.5rem;
+  color: #969495;
+}
+.shop .blocks .turner03 .trn .trn-pic {
+  height: 4.9rem;
+  width: 100%;
+}
+.shop .blocks .turner03 .trn .trn-pic div {
+  float: left;
+  border: 0.025rem solid #a1c09d;
+}
+.shop .blocks .turner03 .trn .trn-pic div img {
+  width: 100%;
+  height: 100%;
+}
+.shop .blocks .turner03 .trn .trn-pic .trn-pic-big {
+  height: 4.85rem;
+  width: 4.85rem;
+}
+.shop .blocks .turner03 .trn .trn-pic .trn-pic-small {
+  float: right;
+  height: 2.325rem;
+  width: 2.325rem;
+}
+.shop .blocks .turner03 .trn .trn-pic .trn-pic-small02 {
+  margin-top: 0.15rem;
+}
+/* like 
+*******************************/
+.like {
+  background: none;
+}
+.like .block-hd {
+  position: relative;
+  margin: 0 auto;
+  width: 15.2rem;
+  background: none;
+}
+.like .block-hd span {
+  float: left;
+  margin-top: 0.625rem;
+  height: 0.025rem;
+  width: 5.25rem;
+  background: #aec8ab;
+}
+.like .block-hd img {
+  float: left;
+}
+.like .blocks {
+  box-sizing: border-box;
+  padding: 0 0.225rem;
+}
+.like .blocks .like01 {
+  box-sizing: border-box;
+  padding: 0.2rem 0.225rem;
+  width: 50%;
+  height: 10.35rem;
+}
+.like .blocks .like01 dl {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  background: #cce3d1;
+}
+.like .blocks .like01 dl dt {
+  width: 100%;
+  height: 7.35rem;
+}
+.like .blocks .like01 dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.like .blocks .like01 dl dd {
+  width: 100%;
+  height: 3rem;
+}
+.like .blocks .like01 dl dd p {
+  margin: 0 auto;
+  width: 7.125rem;
+  font-size: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.like .blocks .like01 dl dd .like-title {
+  padding-top: 0.1rem;
+  height: 1.6rem;
+  line-height: 0.8rem;
+  color: #000;
+}
+.like .blocks .like01 dl dd .like-price {
+  height: 0.85rem;
+  line-height: 0.85rem;
+  color: #e80000;
+}
+/* app 
+*******************************/
+.g-app {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 3.175rem;
+}
+.g-app a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.g-app a img {
+  width: 100%;
+  height: 100%;
+}
+/* footer 
+*******************************/
+.g-foot {
+  width: 100%;
+  height: 4.625rem;
+  background: #cbe3d1;
+}
+.g-foot .friendlink {
+  padding-top: 0.5rem;
+  width: 100%;
+  height: 0.8rem;
+}
+.g-foot .friendlink a {
+  float: left;
+  width: 20%;
+  height: 0.8rem;
+  text-align: center;
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  color: #000;
+}
+.g-foot .copyright {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  color: #8c8b8d;
+}
